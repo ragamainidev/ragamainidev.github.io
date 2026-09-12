@@ -3,61 +3,81 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Why I’m more optimistic about AI than I used to be — Raghav Maini</title>
-<meta name="description" content="Raghav Maini on why browser use changes the possibilities for AI: action, observation, and outcomes, with AlphaFold as a distinct predictive system.">
+<title>What I’d actually delegate to a browser agent — Raghav Maini</title>
+<meta name="description" content="Raghav Maini works through receipt reconciliation to explain browser agents, WebMCP, extraction errors, and when to use code instead of UI controls.">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="author" content="Raghav Maini">
 <link rel="canonical" href="https://raghavmaini.com/writing/why-im-more-optimistic-about-ai/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Why I’m more optimistic about AI than I used to be">
-<meta property="og:description" content="Raghav Maini on why browser use changes the possibilities for AI: action, observation, and outcomes, with AlphaFold as a distinct predictive system.">
+<meta property="og:title" content="What I’d actually delegate to a browser agent">
+<meta property="og:description" content="Raghav Maini works through receipt reconciliation to explain browser agents, WebMCP, extraction errors, and when to use code instead of UI controls.">
 <meta property="og:url" content="https://raghavmaini.com/writing/why-im-more-optimistic-about-ai/">
 <meta property="article:published_time" content="2026-09-12">
+<meta property="article:modified_time" content="2026-09-12T14:46:18+00:00">
 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="/assets/style.css">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23254bd9'/%3E%3Cpath d='M9 25V7h7c8 0 8 10 0 10h-7m7 0 8 8' fill='none' stroke='white' stroke-width='3'/%3E%3C/svg%3E">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Why I’m more optimistic about AI than I used to be", "description": "Raghav Maini on why browser use changes the possibilities for AI: action, observation, and outcomes, with AlphaFold as a distinct predictive system.", "datePublished": "2026-09-12", "dateModified": "2026-09-12", "author": {"@type": "Person", "@id": "https://raghavmaini.com/#person", "name": "Raghav Maini", "url": "https://raghavmaini.com/"}, "mainEntityOfPage": "https://raghavmaini.com/writing/why-im-more-optimistic-about-ai/", "inLanguage": "en", "wordCount": 888, "isPartOf": {"@id": "https://raghavmaini.com/#website"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "What I’d actually delegate to a browser agent", "description": "Raghav Maini works through receipt reconciliation to explain browser agents, WebMCP, extraction errors, and when to use code instead of UI controls.", "datePublished": "2026-09-12", "dateModified": "2026-09-12T14:46:18+00:00", "author": {"@type": "Person", "@id": "https://raghavmaini.com/#person", "name": "Raghav Maini", "url": "https://raghavmaini.com/"}, "mainEntityOfPage": "https://raghavmaini.com/writing/why-im-more-optimistic-about-ai/", "inLanguage": "en", "wordCount": 895, "isPartOf": {"@id": "https://raghavmaini.com/#website"}}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="shell topbar"><a class="wordmark" href="/">Raghav Maini</a><nav aria-label="Main navigation"><a href="/#writing">Writing</a><a href="/#about">About</a></nav></header>
 <main id="main" class="shell"><article>
 <header class="article-header"><a class="back" href="/#writing">All writing</a>
-<h1>Why I’m more optimistic about AI than I used to be</h1>
-<p class="deck">Browser use has made the possibilities feel larger to me. The feedback after an action is part of the reason.</p>
+<h1>What I’d actually delegate to a browser agent</h1>
+<p class="deck">A practical receipt workflow: where browser access helps, what belongs in code, and how to judge whether delegation saved any work.</p>
 <p class="byline"><a href="/">Raghav Maini</a> · <time datetime="2026-09-12">September 12, 2026</time></p></header>
 <div class="essay-body prose" id="article-body">
-<p>I’m more optimistic about AI than I used to be. I think its applications, and its capacity to change how we get things done, go much deeper than I initially appreciated. Part of me still reaches for “a very good language predictor” as an explanation. That intuition makes the machinery feel familiar, but it does surprisingly little to tell me where the machinery can lead.</p>
+<p>The browser workflow I’d try first is collecting receipts from merchant portals and matching them to a statement. I’d want the original documents, a reconciled file, and a short list of exceptions. That gives me a specific job to evaluate, with a result I can check.</p>
 
-<p>Browser use brings that tension into focus. An AI system that can operate an interface has a different relationship with software from one that can only explain it. It can take a step, see what happened, and choose the next step in light of the result. The world gets a turn in the conversation.</p>
+<p>The tools are starting to fit that job. OpenAI’s <a href="https://openai.com/index/chatgpt-for-your-most-ambitious-work/">July 9 introduction of ChatGPT Work</a> combines work across apps and files with a built-in browser. For this example, that means accessing the portal, obtaining the material, then working on the files. The announcement establishes those capabilities; it doesn’t tell us whether a particular reconciliation will save time.</p>
 
-<h2>The next observation changes the plan</h2>
+<p>I would split the job into document collection, extraction, matching, and review. Each needs a different interface and a different definition of done.</p>
 
-<p>Imagine asking an agent to help rearrange a trip. This is an illustrative scenario, not something I’m claiming to have built or tested. The departure changes, the accommodation needs checking, and a booking page reveals a condition that wasn’t visible in the search results. A useful system would carry that discovery back into its plan before preparing the next action.</p>
+<p>First, though, I’d check whether existing accounting software already imports those receipts. The agent earns its place where unsupported merchant portals leave collection work behind. A working integration is a reason to leave that part alone.</p>
 
-<p>A browser gives it a route through software that already exists, including interfaces for which nobody has written a bespoke integration. Anthropic’s <a href="https://www.anthropic.com/news/developing-computer-use">2024 account of developing computer use</a> describes training a model to interpret screenshots and translate instructions into computer actions. The important extension is that model output can become a click or keystroke, followed by another observation. It does not establish that every website is reliably operable.</p>
+<h2>Get the documents, then leave the interface</h2>
 
-<p>There is an intellectual precursor in Shunyu Yao and colleagues’ <a href="https://arxiv.org/abs/2210.03629">ReAct paper</a>, which interleaves reasoning and actions so that information from an environment can inform what happens next. I find the feedback more consequential than the appearance of a model narrating its thoughts. An elegant plan made before opening the booking page may deserve to be abandoned after reading it.</p>
+<p>For the acquisition step, I’d start with a supported export or an authorized API if one exists. Otherwise, the browser earns its place: navigate the account, choose the period, and download the receipts. Copying visible rows from a table is a poor substitute when the site offers the complete file. Pagination and filters can make a convincing-looking extract incomplete.</p>
 
-<p>I would design the travel system to distinguish an attempted action from a confirmed outcome. Clicking a button would record an attempt. A confirmation page would provide evidence about the resulting booking. If the browser lost its connection after the click, the next job would be to inspect the reservation, because repeating the action could create a second booking. A confident sentence saying “all sorted” would settle none of that.</p>
+<p>The handoff matters. Each downloaded file should retain its merchant, account, covered period, and source location. A filename alone doesn’t establish that it belongs to the account the user meant. If the portal doesn’t provide a stable document URL, preserve the document identifier and enough account context to find it again.</p>
 
-<p>This is part of what makes me optimistic: the next useful step can be an observation. The system needn’t know everything at the start if it can discover what matters and revise its approach. That creates room for useful delegation in the messy middle of a task, where the instructions are understandable but the route through the software isn’t fixed.</p>
+<table class="interface-guide">
+<caption>How I’d divide the receipt workflow</caption>
+<thead><tr><th scope="col">Part of the job</th><th scope="col">Interface</th><th scope="col">What must survive the handoff</th></tr></thead>
+<tbody>
+<tr><th scope="row">Obtain receipts</th><td>Authorized export/API, or browser controls</td><td>Original files, account and period</td></tr>
+<tr><th scope="row">Extract fields</th><td>Document parser or OCR, as needed</td><td>Original document and page for each value</td></tr>
+<tr><th scope="row">Match and reconcile</th><td>Code over the downloaded files</td><td>Source row IDs, matching rules, exceptions</td></tr>
+<tr><th scope="row">Resolve ambiguity</th><td>Source document or portal, then human review</td><td>The conflicting evidence and the unresolved question</td></tr>
+</tbody>
+</table>
 
-<p>The practical consequence reaches beyond travel. Many small tasks fall between products, and someone becomes the person who carries context from screen to screen. Browser agents offer a way to explore automating that connective work without first rebuilding every application around a shared interface. Reliable APIs remain attractive where they exist; the browser expands the set of places a system can reach. How much work looks too small to automate only because connecting the software was the larger job? I think that boundary is worth reconsidering.</p>
+<p>A downloaded receipt may be a PDF or image. Before matching anything, I’d extract its fields and retain the source document and page beside each value. An unclear amount or missing currency belongs in the exception list. Reproducible arithmetic can still produce a perfectly consistent answer from a misread receipt.</p>
 
-<h2>Prediction can be a beginning</h2>
+<p>Arithmetic, grouping and duplicate checks then belong in code, with original statement rows preserved. A shared transaction reference is useful only when both records actually contain it. Otherwise, amount, date and merchant can suggest a match; repeated charges and refunds may leave several candidates. I’d keep those unresolved rather than let a plausible match silently become an accepted one.</p>
 
-<p>AlphaFold helps me examine the “predictor” intuition from another direction. In <a href="https://www.nature.com/articles/s41586-021-03819-2">John Jumper and colleagues’ 2021 paper</a>, AlphaFold2 predicts protein structure with an architecture built for that problem. Its Evoformer processes representations of aligned sequences from related proteins and pairs of amino-acid residues; a structure module produces three-dimensional coordinates. It is a specialized structure-prediction system, not a GPT-style language model or a browser agent.</p>
+<h2>The web is starting to offer another route</h2>
 
-<p>The distinction matters because the lesson depends on the task. A structural prediction can become something a scientist reasons with, with confidence and biological limitations still to assess. A proposed browser action can become something software executes, with permissions and the resulting state still to check. These are different mechanisms. In each case, calling the output a prediction leaves open the consequential question of what someone can do with it.</p>
+<p><a href="https://developer.chrome.com/docs/ai/webmcp">WebMCP</a> gives site owners a way to help. Chrome’s documentation, updated August 7, describes a proposed standard for exposing JavaScript operations and annotated HTML forms as structured agent tools. The site declares an operation and its inputs, saving the agent from inferring them from controls on a screen.</p>
 
-<p>My optimism sits in those downstream possibilities. A capability becomes more interesting when its output enters a process that can use it, challenge it, or reveal what should happen next. I don’t need AlphaFold to be evidence for general agency to find its implications profound.</p>
+<p>If I owned the portal, I’d consider <code>export_receipts</code>, taking an account and period and returning document references. The contract must distinguish starting an export from returning completed files; the agent’s next action depends on which has happened.</p>
 
-<p>That also puts a constraint on what I would build. A travel agent’s ability to read a page should not give that page authority to redefine the trip or instruct it to transmit private information. Simon Willison’s <a href="https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/">“lethal trifecta” argument</a> explains why combining private data, untrusted content, and external communication creates a prompt-injection risk. It is a useful challenge to any cheerful story about connecting everything. I would enforce booking permissions in the application and restrict where private information can be sent; retrieved text would have no authority to expand either.</p>
+<p>André Cipriani Bandarra’s <a href="https://developer.chrome.com/docs/ai/webmcp/build-tools">August 26 design guide</a> makes a useful point about failures: the response should explain the missing prerequisite or invalid state. For this portal, “select an account before exporting” gives the agent a recoverable next step. “Export failed” leaves it guessing.</p>
 
-<p>The engineering is part of the possibility. Choosing what a system may do, what counts as evidence, and when it must stop gives us a way to make a broad capability useful for a particular purpose.</p>
+<p>Chrome offers WebMCP through an <a href="https://github.com/webmachinelearning/webmcp/blob/main/implementation-status.md">origin trial</a>, and sites must implement their tools. It primarily serves local browser workflows with a human involved. I wouldn’t make an unattended service depend on universal support. Existing APIs and exports remain useful; browser interaction fills the gaps.</p>
 
-<p>I still haven’t settled what the language-prediction intuition tells me about intelligence. I’m much more certain that I was underestimating what becomes possible when a model can reach existing software, observe the consequences of its actions, and keep working from what it learns. That is enough to make the space of applications feel considerably larger than it used to.</p>
+<h2>Test the handoffs, not just the happy path</h2>
+
+<p>Alibaba’s <a href="https://arxiv.org/html/2608.17319v1">August 18 Wuying-Browser-Agent paper</a> describes a browser system that primarily reads structured page content, requesting screenshots when visual grounding is needed. Its context is reconstructed as the browser changes, rather than treated as an indefinitely growing transcript. That distinction is practical: an element reference from an earlier page is not an enduring fact about the task.</p>
+
+<p>In the receipt workflow, I’d keep “this document belongs to this account” separately from “the download button is this element.” After navigation, the latter needs a fresh observation. Throwing more history at the model doesn’t make an obsolete reference valid.</p>
+
+<p>The July revision of <a href="https://arxiv.org/html/2606.09426v3">WeaveBench</a> examines deliberately mixed-interface tasks in controlled environments. Its evaluators recheck files, images and execution evidence because plausible final artifacts can conceal fabricated work. For this workflow, I’d inspect the transitions: did the downloaded receipt produce the extracted value that the matching code actually used?</p>
+
+<p>For a pilot, I’d use real historical statements and receipts whose matches I can check. Measure missing documents, incorrect matches, unresolved cases, and the time I spend reviewing or rescuing the run. Compare that with doing the same work manually. A fast agent that leaves me reopening every portal has failed the business test.</p>
+
+<p>I’d start with document collection and reconciliation because the originals let me inspect the result. Changes to payments or accounts would be a separate workflow. What would earn broader delegation is fewer missing documents and incorrect matches, with less review time on comparable batches.</p>
 </div>
 </article></main>
 <footer class="shell footer article-footer"><a href="/">Raghav Maini</a><div><a href="/#writing">All writing</a><a href="https://ragamaini.substack.com/">Substack</a><a href="https://about.me/raghavmaini">About.me</a></div></footer>
