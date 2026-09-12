@@ -8,7 +8,6 @@
 @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}}
 
 .essay-body{margin-inline:auto;padding-block:3rem}.essay-body figure{margin:2.25rem 0}.essay-body figure img{width:100%;height:auto}.essay-body figcaption{font-size:.85rem;line-height:1.6;color:var(--muted);margin-top:.85rem}.byline a{text-decoration:none}.byline a:hover{text-decoration:underline}
-.interface-guide{width:100%;border-collapse:collapse;table-layout:fixed;margin:2rem 0;font-size:.9rem;line-height:1.55;text-align:left}.interface-guide caption{text-align:left;font-weight:600;margin-bottom:.9rem}.interface-guide th,.interface-guide td{padding:1rem .8rem 1rem 0;border-bottom:1px solid var(--rule);vertical-align:top;overflow-wrap:break-word}.interface-guide th{font-weight:600}.interface-guide thead th{color:var(--blue);border-top:1px solid var(--rule)}.interface-guide th:first-child{width:27%}.interface-guide th:nth-child(2){width:32%}.interface-guide td:last-child,.interface-guide th:last-child{padding-right:0}.essay-body code{font-size:.88em;overflow-wrap:anywhere}@media(max-width:600px){.interface-guide{font-size:.875rem}.interface-guide th,.interface-guide td{padding:.8rem .5rem .8rem 0}.interface-guide th:first-child{width:28%}.interface-guide th:nth-child(2){width:34%}}
 
 .home .intro{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:3rem;align-items:center;padding-block:2.25rem 3rem}
 .home .intro h1{max-width:none;font-size:clamp(2.9rem,8vw,6rem);line-height:1;white-space:nowrap}
