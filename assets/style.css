@@ -8,3 +8,38 @@
 @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}}
 
 .essay-body{margin-inline:auto;padding-block:3rem}.essay-body figure{margin:2.25rem 0}.essay-body figure img{width:100%;height:auto}.essay-body figcaption{font-size:.85rem;line-height:1.6;color:var(--muted);margin-top:.85rem}.byline a{text-decoration:none}.byline a:hover{text-decoration:underline}
+
+.home .intro{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:3rem;align-items:center;padding-block:2.25rem 3rem}
+.home .intro h1{max-width:none;font-size:clamp(2.9rem,8vw,6rem);line-height:1;white-space:nowrap}
+.home .intro .identity{margin:1rem 0 0}
+.home .intro-copy{padding-top:0}
+.home .intro-copy .lead{font-size:1.65rem;line-height:1.3;margin-bottom:.75rem}
+.home .writing-section{display:block;padding-block:2.75rem 3.25rem}
+.home .writing-section>h2{margin-bottom:2rem}
+.home .writing-layout{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:4rem}
+.home .writing-feature{display:block;text-decoration:none;align-self:start}
+.home .writing-feature h3{font-family:Newsreader,Georgia,serif;font-size:clamp(2.4rem,3.5vw,3.2rem);line-height:1.08;font-weight:400;letter-spacing:-.02em;max-width:22ch}
+.home .writing-feature .writing-meta{font-size:.8rem;color:var(--muted);margin:1rem 0 1.25rem}
+.home .writing-summary{font-size:1rem;line-height:1.75;color:var(--muted);max-width:57ch;margin-bottom:1rem}
+.home .writing-feature:hover h3{text-decoration:underline;text-underline-offset:.12em;text-decoration-thickness:1px}
+.home .writing-feature .text-link{text-decoration:underline}
+.home .writing-previous{border-left:1px solid var(--rule);padding-left:2.5rem}
+.home .writing-previous .writing-item h3{font-size:1.65rem;margin:0 0 .75rem}
+.home .writing-previous .writing-meta{font-size:.8rem;margin-bottom:.75rem}
+@media(max-width:1000px) and (min-width:761px){
+  .home .intro{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:2rem}
+  .home .intro h1{font-size:clamp(2.9rem,6.8vw,4.8rem)}
+  .home .intro-copy .lead{font-size:1.5rem}
+  .home .writing-layout{gap:2rem;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr)}
+  .home .writing-previous{padding-left:2rem}
+}
+@media(max-width:760px){
+  .home .intro{grid-template-columns:1fr;gap:1.25rem;padding-block:1.75rem 2rem}
+  .home .intro .identity{margin-top:.75rem;font-size:.85rem}
+  .home .intro-copy .lead{font-size:1.5rem;max-width:29ch}
+  .home .writing-section{padding-block:2rem 2.5rem}
+  .home .writing-section>h2{margin-bottom:1.5rem}
+  .home .writing-layout{grid-template-columns:1fr;gap:2rem}
+  .home .writing-feature h3{font-size:2.4rem;max-width:24ch}
+  .home .writing-previous{border-left:0;border-top:1px solid var(--rule);padding:2rem 0 0}
+}
