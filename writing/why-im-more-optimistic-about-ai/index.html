@@ -13,11 +13,11 @@
 <meta property="og:description" content="Raghav Maini examines browser agents, shopping incentives, and how purchase data and merchant recommendations can shape an agent’s decisions.">
 <meta property="og:url" content="https://raghavmaini.com/writing/why-im-more-optimistic-about-ai/">
 <meta property="article:published_time" content="2026-09-12">
-<meta property="article:modified_time" content="2026-09-12T15:14:33+00:00">
+<meta property="article:modified_time" content="2026-09-14T14:19:02.825335+00:00">
 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="/assets/style.css">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23254bd9'/%3E%3Cpath d='M9 25V7h7c8 0 8 10 0 10h-7m7 0 8 8' fill='none' stroke='white' stroke-width='3'/%3E%3C/svg%3E">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Your AI should be a difficult customer", "description": "Raghav Maini examines browser agents, shopping incentives, and how purchase data and merchant recommendations can shape an agent’s decisions.", "datePublished": "2026-09-12", "dateModified": "2026-09-12T15:14:33+00:00", "author": {"@type": "Person", "@id": "https://raghavmaini.com/#person", "name": "Raghav Maini", "url": "https://raghavmaini.com/"}, "mainEntityOfPage": "https://raghavmaini.com/writing/why-im-more-optimistic-about-ai/", "inLanguage": "en", "wordCount": 875, "isPartOf": {"@id": "https://raghavmaini.com/#website"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Your AI should be a difficult customer", "description": "Raghav Maini examines browser agents, shopping incentives, and how purchase data and merchant recommendations can shape an agent’s decisions.", "datePublished": "2026-09-12", "dateModified": "2026-09-14T14:19:02.825335+00:00", "author": {"@type": "Person", "@id": "https://raghavmaini.com/#person", "name": "Raghav Maini", "url": "https://raghavmaini.com/"}, "mainEntityOfPage": "https://raghavmaini.com/writing/why-im-more-optimistic-about-ai/", "inLanguage": "en", "wordCount": 775, "isPartOf": {"@id": "https://raghavmaini.com/#website"}}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -42,7 +42,7 @@
 
 <p>These are useful signals. The purchased item tells us what won among the options and information that user encountered. It cannot, by itself, tell us whether a competitor’s product, a repair, or keeping the thing they already owned would have been better. The distinction matters when an agent moves from recommending products to deciding whether to buy one.</p>
 
-<p>For a buyer’s agent, I’d want successful decisions that end without an order represented in evaluation too. That does not mean rewarding abandoned carts indiscriminately. Leaving because nothing meets the user’s needs and leaving because the agent lost track of the task are different outcomes.</p>
+<p>A decision not to buy exposes the same ambiguity. Leaving because nothing meets the user’s needs and leaving because the agent lost track of the task are different outcomes. An abandoned cart cannot distinguish them on its own.</p>
 
 <h2>A perfectly reasonable upsell</h2>
 
@@ -50,11 +50,11 @@
 
 <p>The agent could compare prices impeccably and still optimize for a preference it acquired from the sales pitch. No incorrect specification or broken checkout is necessary.</p>
 
-<p>That is the distinction I’d preserve in the design. The seller’s claim stays attached to the offer and its source. My requirements remain separate. Shopify’s <a href="https://shopify.dev/docs/api/web-mcp">current tools</a> can supply product details and store-policy information; my agent should use those facts to evaluate the offer, without turning the store’s recommendation into a new instruction.</p>
+<p>Anthropic’s September 2 <a href="https://claude.com/blog/the-anatomy-of-effective-commerce-agents">reference architecture</a> addresses one route by which that boundary can blur. A separate memory extractor reads user and assistant messages while excluding tool results. Its instructions say to retain customer-stated preferences and limits, not product listings or the agent’s own guesses. Saved facts retain their originating session.</p>
 
-<p>A genuinely useful upgrade might let me keep the machine longer. I’d want the agent to explain that tradeoff and establish whether it matters to me. It should be able to revise its recommendation after learning something, while keeping clear which preference came from me and which benefit the seller proposed.</p>
+<p>The extractor still has to recognize whose preference a statement expresses: an assistant could repeat a seller’s claim in its own response. A useful upgrade may deserve consideration without becoming a requirement the buyer has already endorsed.</p>
 
-<p>I’d also keep the full personal brief and spending ceiling out of routine requests to the store. Send the information needed for the question, then compare the offers against private criteria and alternatives from elsewhere. That is a proposed architecture, not a privacy guarantee: ordinary browsing and the questions the agent asks can still reveal preferences.</p>
+
 
 <p>A store-backed assistant could be excellent at explaining its warranty. My own agent would have a broader job, including comparing competitors and questioning whether I need to replace the laptop at all. Giving both assistants the same model doesn’t give them the same job.</p>
 
@@ -66,7 +66,7 @@
 
 <p>A system that understands me better after a long interrogation may still be a service I don’t want. I might rationally pay more for a familiar retailer or a quicker decision. Representing me well includes respecting that preference, even when the agent could keep searching.</p>
 
-<p>To evaluate it, I’d inspect real shopping decisions with the user’s requirements recorded beforehand, then follow up on whether the product solved the problem, why it was returned or kept, and how much correction the agent required. For a decision not to buy, I’d record the reason and whether the user still needed help. Neither checkout completion nor refusal gets automatic credit.</p>
+<p>That leaves a difficult boundary: how much of the brief can be inferred, and which changes require asking the buyer? Frequent questions can turn the agent into another shopping task. Too few can allow a retailer’s suggestion to become the preference guiding the search.</p>
 
 <p>If an agent can explain why the expensive option is worth it for me, I’m listening. If it establishes that I should keep the laptop I already have, I’d count that as a job well done.</p>
 </div>
