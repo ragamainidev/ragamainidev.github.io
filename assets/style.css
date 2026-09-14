@@ -9,6 +9,10 @@
 
 .essay-body{margin-inline:auto;padding-block:3rem}.essay-body figure{margin:2.25rem 0}.essay-body figure img{width:100%;height:auto}.essay-body figcaption{font-size:.85rem;line-height:1.6;color:var(--muted);margin-top:.85rem}.byline a{text-decoration:none}.byline a:hover{text-decoration:underline}
 
+.article-footer nav{display:flex;flex-wrap:wrap;gap:.25rem 1.4rem}
+.article-footer a{display:inline-flex;align-items:center;min-height:2.75rem}
+.article-footer .footer-writing{color:var(--blue);font-weight:600}
+
 .home .intro{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:3rem;align-items:center;padding-block:2.25rem 3rem}
 .home .intro h1{max-width:none;font-size:clamp(2.9rem,8vw,6rem);line-height:1;white-space:nowrap}
 .home .intro .identity{margin:1rem 0 0}
