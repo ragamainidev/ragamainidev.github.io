@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Writing — Raghav Maini</title>
+    <link>https://raghavmaini.com/writing/</link>
+    <description>Essays and engineering notes on applied AI, agent design, and the choices that make software useful.</description>
+    <language>en-us</language>
+    <copyright>Copyright Raghav Maini. All rights reserved.</copyright>
+    <atom:link href="https://raghavmaini.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Where should an agent’s tool call end?</title>
+      <link>https://raghavmaini.com/writing/where-an-agents-tool-call-should-end/</link>
+      <guid isPermaLink="true">https://raghavmaini.com/writing/where-an-agents-tool-call-should-end/</guid>
+      <pubDate>Tue, 15 Sep 2026 00:00:00 -0400</pubDate>
+      <dc:creator>Raghav Maini</dc:creator>
+      <description>A single call can contain a search, a program or another agent. The boundary determines which decisions return to the model.</description>
+    </item>
+    <item>
+      <title>Cheap to continue, hard to start</title>
+      <link>https://raghavmaini.com/writing/cheap-to-continue-hard-to-start/</link>
+      <guid isPermaLink="true">https://raghavmaini.com/writing/cheap-to-continue-hard-to-start/</guid>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 -0400</pubDate>
+      <dc:creator>Raghav Maini</dc:creator>
+      <description>How cached context can turn an AI serving optimization into a choice about whose work gets admitted.</description>
+    </item>
+    <item>
+      <title>What an AI restoration asks us to believe</title>
+      <link>https://raghavmaini.com/writing/what-an-ai-restoration-asks-us-to-believe/</link>
+      <guid isPermaLink="true">https://raghavmaini.com/writing/what-an-ai-restoration-asks-us-to-believe/</guid>
+      <pubDate>Sun, 13 Sep 2026 00:00:00 -0400</pubDate>
+      <dc:creator>Raghav Maini</dc:creator>
+      <description>A reconstruction can correct a misconception while choosing details the evidence cannot settle.</description>
+    </item>
+    <item>
+      <title>Your AI should be a difficult customer</title>
+      <link>https://raghavmaini.com/writing/why-im-more-optimistic-about-ai/</link>
+      <guid isPermaLink="true">https://raghavmaini.com/writing/why-im-more-optimistic-about-ai/</guid>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 -0400</pubDate>
+      <dc:creator>Raghav Maini</dc:creator>
+      <description>What an agent learns from a purchase—and what happens when a sales pitch becomes a preference it thinks you expressed.</description>
+    </item>
+    <item>
+      <title>Evidence, authority, and the cost of another question</title>
+      <link>https://raghavmaini.com/writing/evidence-and-agent-decisions/</link>
+      <guid isPermaLink="true">https://raghavmaini.com/writing/evidence-and-agent-decisions/</guid>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 -0400</pubDate>
+      <dc:creator>Raghav Maini</dc:creator>
+      <description>How I separate evidence, authority, and spending from an agent’s choice of what to investigate.</description>
+    </item>
+    <item>
+      <title>Designing AI agents for decisions that keep changing</title>
+      <link>https://raghavmaini.com/writing/designing-ai-agents-for-decisions/</link>
+      <guid isPermaLink="true">https://raghavmaini.com/writing/designing-ai-agents-for-decisions/</guid>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 -0400</pubDate>
+      <dc:creator>Raghav Maini</dc:creator>
+      <description>The personal starting point, the business question, and what it takes to keep a recommendation useful as new information arrives.</description>
+    </item>
+  </channel>
+</rss>

@@ -55,6 +55,8 @@
 .archive-intro{padding-block:2.25rem 3rem}
 .archive-intro h1{font-size:clamp(3.5rem,6.9vw,6rem);line-height:1;letter-spacing:-.035em;color:var(--blue);margin-bottom:1.25rem}
 .archive-intro p{font-family:Newsreader,Georgia,serif;font-size:1.6rem;line-height:1.4;max-width:42ch;margin:0}
+.archive-intro .archive-follow{display:flex;align-items:center;flex-wrap:wrap;gap:.25rem 1rem;font-family:Manrope,sans-serif;font-size:.875rem;line-height:1.6;max-width:none;margin-top:1.25rem}
+.archive-follow a{display:inline-flex;align-items:center;min-height:2.75rem;color:var(--blue);font-weight:600}
 .archive-year{display:grid;grid-template-columns:12rem minmax(0,1fr);gap:4rem;padding-block:3rem 3.5rem;border-bottom:1px solid var(--rule)}
 .archive-year>h2{font-size:2rem;line-height:1.1}
 .archive-list{list-style:none;padding:0;margin:0}
