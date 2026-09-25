@@ -74,3 +74,14 @@
   .archive-year>h2{font-size:1.7rem}
   .archive-entry h3{font-size:2rem}
 }
+
+.notfound-page .topbar{flex-wrap:wrap;gap:.25rem 2rem}
+.notfound-page .topbar a{display:inline-flex;align-items:center;min-height:2.75rem}
+.notfound-page .notfound{padding-block:clamp(3rem,8vw,7rem)}
+.notfound-page .notfound h1{font-size:clamp(3rem,6vw,4.65rem);line-height:1.06;letter-spacing:-.025em;max-width:14ch;color:var(--blue);margin-bottom:1.5rem}
+.notfound-page .notfound>p{font-size:1.05rem;max-width:43ch;color:var(--muted);margin-bottom:1.75rem}
+.recovery-actions{display:flex;align-items:center;flex-wrap:wrap;gap:.75rem 1.5rem}
+.recovery-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:2.75rem;font-size:.9rem;font-weight:600;color:var(--blue)}
+.recovery-actions .recovery-primary{padding:.75rem 1.1rem;background:var(--blue);color:var(--paper);text-decoration:none;text-align:center;line-height:1.5}
+.recovery-actions .recovery-primary:hover{text-decoration:underline}
+@media(max-width:400px){.recovery-actions{align-items:flex-start;flex-direction:column;gap:.5rem}}

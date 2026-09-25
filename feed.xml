@@ -8,6 +8,14 @@
     <copyright>Copyright Raghav Maini. All rights reserved.</copyright>
     <atom:link href="https://raghavmaini.com/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>When AI researchers compare notes too soon</title>
+      <link>https://raghavmaini.com/writing/when-ai-researchers-read-each-others-notes/</link>
+      <guid isPermaLink="true">https://raghavmaini.com/writing/when-ai-researchers-read-each-others-notes/</guid>
+      <pubDate>Fri, 25 Sep 2026 00:00:00 -0400</pubDate>
+      <dc:creator>Raghav Maini</dc:creator>
+      <description>A shared lead can help a team reason—and quietly decide what everyone investigates next.</description>
+    </item>
+    <item>
       <title>Where should an agent’s tool call end?</title>
       <link>https://raghavmaini.com/writing/where-an-agents-tool-call-should-end/</link>
       <guid isPermaLink="true">https://raghavmaini.com/writing/where-an-agents-tool-call-should-end/</guid>
