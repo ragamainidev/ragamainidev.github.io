@@ -75,8 +75,11 @@
   .archive-entry h3{font-size:2rem}
 }
 
-.notfound-page .topbar{flex-wrap:wrap;gap:.25rem 2rem}
-.notfound-page .topbar a{display:inline-flex;align-items:center;min-height:2.75rem}
+.topbar{flex-wrap:wrap;gap:.25rem 2rem}
+.topbar nav{flex-wrap:wrap}
+.topbar a{display:inline-flex;align-items:center;min-width:2.75rem;min-height:2.75rem}
+body:not(.notfound-page) .topbar{padding-block:.75rem}
+@media(max-width:760px){body:not(.notfound-page) .topbar{padding-block:.5rem}}
 .notfound-page .notfound{padding-block:clamp(3rem,8vw,7rem)}
 .notfound-page .notfound h1{font-size:clamp(3rem,6vw,4.65rem);line-height:1.06;letter-spacing:-.025em;max-width:14ch;color:var(--blue);margin-bottom:1.5rem}
 .notfound-page .notfound>p{font-size:1.05rem;max-width:43ch;color:var(--muted);margin-bottom:1.75rem}
