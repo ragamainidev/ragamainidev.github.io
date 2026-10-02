@@ -56,12 +56,12 @@
       <description>How I separate evidence, authority, and spending from an agent’s choice of what to investigate.</description>
     </item>
     <item>
-      <title>When new evidence should change an agent’s decision</title>
+      <title>Designing AI agents for decisions that keep changing</title>
       <link>https://raghavmaini.com/writing/designing-ai-agents-for-decisions/</link>
       <guid isPermaLink="true">https://raghavmaini.com/writing/designing-ai-agents-for-decisions/</guid>
       <pubDate>Sat, 12 Sep 2026 00:00:00 -0400</pubDate>
       <dc:creator>Raghav Maini</dc:creator>
-      <description>Withdrawing a conclusion is easy. Knowing which parts of the reasoning still hold is harder.</description>
+      <description>Lessons from trying to work out whether rebuilding an exotic could ever make sense for me.</description>
     </item>
   </channel>
 </rss>
