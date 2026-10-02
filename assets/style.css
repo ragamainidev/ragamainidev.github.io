@@ -88,3 +88,22 @@ body:not(.notfound-page) .topbar{padding-block:.75rem}
 .recovery-actions .recovery-primary{padding:.75rem 1.1rem;background:var(--blue);color:var(--paper);text-decoration:none;text-align:center;line-height:1.5}
 .recovery-actions .recovery-primary:hover{text-decoration:underline}
 @media(max-width:400px){.recovery-actions{align-items:flex-start;flex-direction:column;gap:.5rem}}
+
+/* Keep enlarged reading text within its available measure. */
+body{overflow-wrap:anywhere}
+.shell{container-type:inline-size;padding-inline:min(3.5rem,56px)}
+.home .intro h1{white-space:normal}
+.home .writing-heading{flex-wrap:wrap}
+@media(max-width:760px){.shell{padding-inline:min(1.5rem,24px)}}
+@container(max-width:40rem){
+  .home .intro{grid-template-columns:minmax(0,1fr);gap:1.25rem}
+  .home .writing-layout{grid-template-columns:minmax(0,1fr);gap:2rem}
+  .home .writing-previous{border-left:0;border-top:1px solid var(--rule);padding:2rem 0 0}
+  .section,.archive-year{grid-template-columns:minmax(0,1fr);gap:1.5rem}
+  .article-layout{grid-template-columns:minmax(0,1fr);gap:2.5rem}
+  .contents{position:static;border-bottom:1px solid var(--rule);padding-bottom:1.25rem}
+  .contents ol{display:flex;flex-wrap:wrap;gap:.5rem 1.25rem}
+  .contents li{margin:0}
+  .decision-example dl{grid-template-columns:minmax(0,1fr);gap:1.25rem}
+}
+@container(max-width:11rem){h1,h2,h3{hyphens:auto}}
