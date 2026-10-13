@@ -107,3 +107,9 @@ body{overflow-wrap:anywhere}
   .decision-example dl{grid-template-columns:minmax(0,1fr);gap:1.25rem}
 }
 @container(max-width:11rem){h1,h2,h3{hyphens:auto}}
+
+/* Let readers open the original diagrams from the image or its label. */
+.essay-body .diagram-link{display:block;color:var(--blue);text-decoration:none}
+.diagram-action{display:flex;align-items:center;min-height:2.75rem;font-size:.875rem;font-weight:600;line-height:1.6;text-decoration:underline;text-underline-offset:.22em}
+.diagram-link:hover .diagram-action{text-decoration-thickness:2px}
+.essay-body .diagram-link+figcaption{margin-top:.25rem}
