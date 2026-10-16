@@ -113,3 +113,23 @@ body{overflow-wrap:anywhere}
 .diagram-action{display:flex;align-items:center;min-height:2.75rem;font-size:.875rem;font-weight:600;line-height:1.6;text-decoration:underline;text-underline-offset:.22em}
 .diagram-link:hover .diagram-action{text-decoration-thickness:2px}
 .essay-body .diagram-link+figcaption{margin-top:.25rem}
+
+/* Keep saved and printed essays focused on the reading. */
+@media print{
+  body:has(article){--ink:#000;--muted:#333;--blue:#000;--rule:#bbb;color:var(--ink)}
+  body:has(article)>.topbar,body:has(article)>.footer,body:has(article)>.skip,
+  .article-header .back,article .contents,article .diagram-action{display:none}
+  body:has(article)>.shell{max-width:none;padding:0;container-type:normal}
+  .article-header{padding:0 0 .2in}
+  .article-header h1{font-size:28pt;line-height:1.08;max-width:none;margin:0 0 .14in}
+  .article-header .deck{font-size:14pt;line-height:1.35;max-width:none;margin-bottom:.14in}
+  .article-header .byline{font-size:9pt;margin:0}
+  .article-layout{display:block;padding:.22in 0 0}
+  .essay-body{padding:.22in 0 0}
+  article .prose{max-width:none;font-size:11pt}
+  article .prose p{font-size:11pt;line-height:1.55;margin-bottom:.14in;orphans:3;widows:3}
+  article .prose h2{font-size:17pt;line-height:1.2;margin:.25in 0 .12in;break-after:avoid}
+  article .prose figure{margin:.2in 0;break-inside:avoid}
+  article .prose figcaption{font-size:9pt;line-height:1.4}
+  article .related{break-inside:avoid}
+}
